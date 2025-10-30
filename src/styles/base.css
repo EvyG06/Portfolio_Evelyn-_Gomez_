@@ -1,0 +1,9 @@
+html { scroll-behavior: smooth; }
+
+body { @apply font-sans bg-muted text-gray-900 leading-relaxed; }
+
+h1,h2,h3,h4 { @apply font-sans text-primary; }
+
+a { @apply transition-colors duration-300; }
+
+a:hover { @apply text-accent; }

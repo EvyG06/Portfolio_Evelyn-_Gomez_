@@ -1,0 +1,24 @@
+.navbar { @apply fixed top-0 left-0 w-full z-50 transition-all duration-500; 
+  background: rgba(255,255,255,0.25); backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); border-bottom: 1px solid rgba(255,255,255,0.3);
+}
+
+.navbar.scrolled { background: rgba(255,255,255,0.5); box-shadow: 0 6px 20px rgba(0,0,0,0.05); }
+
+.navbar a { @apply text-gray-900 hover:text-primary font-medium; }
+
+.btn-primary { @apply bg-primary text-white px-5 py-2 rounded-xl shadow-soft hover:bg-accent transition; }
+
+.card { @apply bg-white/80 backdrop-blur-sm rounded-2xl shadow-soft overflow-hidden border border-white/60; }
+
+.card:hover { @apply shadow-xl; }
+
+.hobbies { @apply grid grid-cols-3 sm:grid-cols-6 gap-5 justify-items-center; }
+
+.hobby { @apply flex flex-col items-center gap-2; }
+
+.hobby span { @apply text-3xl; }
+
+.hobby p { @apply text-xs text-gray-600; }
+
+.hobby:hover { transform: translateY(-2px) scale(1.05); transition: all .25s ease; }
